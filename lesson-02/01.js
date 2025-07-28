@@ -16,10 +16,10 @@ let hasTemporaryPass
 let isAccess
 
 
-if ((isAdmin === true || isVerifiedUser === true) && (hasSpecialPermission === true || hasTemporaryPass === true)) {
-    //('Доступ разрешен')
-    isAccess = true
+if((isAdmin === true || hasSpecialPermission === true)&&(hasSpecialPermission === true || hasTemporaryPass === true)) {
+    isAccess === true
 } else {
-    isAccess = false// ('Доступ запрещен')
+    isAccess === false
 }
+
 
