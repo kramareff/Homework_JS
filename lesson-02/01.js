@@ -18,8 +18,6 @@ let isAccess = false
 
 if((isAdmin === true || hasSpecialPermission === true)&&(hasSpecialPermission === true || hasTemporaryPass === true)) {
     isAccess = true
-} else {
-    isAccess = false
-}
-
+} else  if ((isAdmin === false && isVerifiedUser === false) && (hasSpecialPermission === false && hasTemporaryPass === false)){
+    isAccess = false}
 
