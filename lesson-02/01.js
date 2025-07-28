@@ -8,11 +8,32 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = false
-const isVerifiedUser = true
-const hasSpecialPermission = true
-const hasTemporaryPass = false
+let isAdmin = false
+let isVerifiedUser = false
+let hasSpecialPermission = false
+let hasTemporaryPass = false
 
-let isAccess
+let isAccess = false
 
-// your code
+let userName = prompt('Введите имя пользователя: ')
+
+if(userName === "Vlad") {
+    isAdmin = true
+    isVerifiedUser = false
+    hasSpecialPermission = true
+    hasTemporaryPass = false
+} else {
+    isAdmin = false
+    isVerifiedUser = false
+    hasSpecialPermission = false
+    hasTemporaryPass = false
+    isAccess = false
+}
+
+if ((isAdmin === true || isVerifiedUser === true) && (hasSpecialPermission === true || hasTemporaryPass === true)) {
+    alert ('Доступ разрешен')
+    isAccess = true
+} else {
+    alert ('Доступ запрещен')
+}
+
