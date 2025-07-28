@@ -34,6 +34,6 @@ if ((isAdmin === true || isVerifiedUser === true) && (hasSpecialPermission === t
     //('Доступ разрешен')
     isAccess = true
 } else {
-    // ('Доступ запрещен')
+    isAccess = false// ('Доступ запрещен')
 }
 
