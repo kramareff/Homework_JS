@@ -8,10 +8,10 @@
 */
 
 // тестовые данные (значения можно менять)
-let isAdmin
-let isVerifiedUser
-let hasSpecialPermission
-let hasTemporaryPass 
+let isAdmin = true
+let isVerifiedUser = false
+let hasSpecialPermission = true
+let hasTemporaryPass = false
 
 let isAccess
 
