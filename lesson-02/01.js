@@ -31,9 +31,9 @@ if(userName === "Vlad") {
 }
 
 if ((isAdmin === true || isVerifiedUser === true) && (hasSpecialPermission === true || hasTemporaryPass === true)) {
-    alert ('Доступ разрешен')
+    //('Доступ разрешен')
     isAccess = true
 } else {
-    alert ('Доступ запрещен')
+    // ('Доступ запрещен')
 }
 
