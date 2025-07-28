@@ -13,13 +13,13 @@ const isVerifiedUser = false
 const hasSpecialPermission = true
 const hasTemporaryPass = false
 
-let isAccess = true
+let isAccess = false
 
 
 if((isAdmin === true || hasSpecialPermission === true)&&(hasSpecialPermission === true || hasTemporaryPass === true)) {
-    isAccess === true
+    isAccess = true
 } else {
-    isAccess === false
+    isAccess = false
 }
 
 
