@@ -3,9 +3,9 @@
 
 function isEven(num) {
      if((num%2) === 0) {
-        isEven === true
+        isEven = true
     } else {
-        isEven === false
+        isEven = false
     }
 
 return isEven
