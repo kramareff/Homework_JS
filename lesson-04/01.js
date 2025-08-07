@@ -9,8 +9,21 @@
 - `true`: Если элемент найден в массиве.
 - `false`: Если элемент отсутствует в массиве.
 
-Пример использования:
+Пример использования:`˜`˜˜`˜˜˜
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-function includesElement() {}
+function includesElement(array, element) {
+   let flag =false
+    for(let i = 0; i < array.length; i++)
+    {
+        if (array[i] === element) {
+            flag= true
+        }  
+    }
+    return flag
+}
+
+
+console.log(includesElement([1, 2, 3], 3))
+
