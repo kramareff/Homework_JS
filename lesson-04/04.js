@@ -20,7 +20,6 @@ function doubleEachCharacter(str) {
 return str2
 
 }
-str='hel'
 console.log(doubleEachCharacter('hello!'))
 // console.log(str[1]='O',str)
 // let a = 'aa'.split('').forEach(item=>item+item)
