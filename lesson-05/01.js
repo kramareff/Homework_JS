@@ -30,7 +30,3 @@ const game = {
   }
 }
 
-// game.addResource('lumber', 20)
-// console.log(game.resources);
-// 
-
