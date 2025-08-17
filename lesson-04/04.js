@@ -21,6 +21,3 @@ return str2
 
 }
 console.log(doubleEachCharacter('hello!'))
-// console.log(str[1]='O',str)
-// let a = 'aa'.split('').forEach(item=>item+item)
-// console.log('hello'.split('').map(item=>item+item).join(''))

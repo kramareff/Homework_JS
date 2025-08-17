@@ -22,12 +22,11 @@ function findCommonElements(array, array2) {
     for(let i = 0; i < array.length; i++) 
     {
         
-        if (array2.indexOf(array[i])>=0){
+        if (array2.indexOf(array[i])>=0)
+        {
         arrayNew.push(array[i])
-        
-     }else{}
-        
-     
+         }
+     else{}
     }
     return arrayNew
 }
