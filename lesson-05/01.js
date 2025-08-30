@@ -12,20 +12,22 @@
 
 const game = {
   resources: {
-    gold: 250,
-    lumber: 100,
+    gold: 100,
+    lumber: 50,
+    stone: 30
   },
+
   addResource(resource, amount) {
-    if (resource === 'gold') {
-      game.resources.gold += amount;
-      console.log(`Добавлено золото, текущие запасы: ${game.resources.gold}`);
-    } else if (resource === 'lumber') {
-      game.resources.lumber += amount;
-      console.log(`Добавлено дерево, текущие запасы: ${game.resources.lumber}`);
-    } else {
-      console.log('Invalid resource');
-      
+    // Проверяем, есть ли такой ресурс в объекте
+    if (!(resource in this.resources)) {
+      console.log("Invalid resource");
+      return;
     }
+
+    // Добавляем указанное количество
+    this.resources[resource] += amount;
   }
-}
+};
+
+
 
