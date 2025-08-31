@@ -36,7 +36,13 @@ const gallery = {
 }
 
 function updateGallery(object, name, newInfo) {
- object[name] = newInfo 
+  if(object[name]){
+    object[name] = newInfo 
+  } else {
+    object[name] = newInfo
+  }
+ 
+
 }
 
 // updateGallery(gallery, 'Mona Lisa', 'Leonardo da Vinci, 1503-1506')
