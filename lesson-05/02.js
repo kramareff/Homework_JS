@@ -35,8 +35,8 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery(object, name, newInfo) {
-  if(object[name]){
+function updateGallery (object, name, newInfo) {
+  if(object?.[name]){
     object[name] = newInfo 
   } else {
     object[name] = newInfo
