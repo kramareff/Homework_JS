@@ -18,13 +18,10 @@ const game = {
   },
 
   addResource(resource, amount) {
-    // Проверяем, есть ли такой ресурс в объекте
     if (!(resource in this.resources)) {
       console.log("Invalid resource");
       return;
     }
-
-    // Добавляем указанное количество
     this.resources[resource] += amount;
   }
 };
