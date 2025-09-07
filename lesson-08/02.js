@@ -13,7 +13,7 @@ return !isNaN(num) && isFinite(num)
   
 
 
-console.log(isNumeric("22.1"))
+console.log(isNumeric(" "))
 // console.log(isNumeric("123")) // Ожидаемый результат: true
 // console.log(isNumeric("12.3")) // Ожидаемый результат: true
 // console.log(isNumeric("123abc")) // Ожидаемый результат: false
